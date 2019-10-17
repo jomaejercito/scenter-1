@@ -1,0 +1,35 @@
+##OVERVIEW
+This is an app that allows users to search for frangraces.
+
+##USER STORIES
+Users should be able to...
+- Search for fragrances
+- See the details of fragrances
+- "like" and "dislike" perfumes
+  - user can only choose "like" or "dislike" for a specific fragrance
+
+##STRETCH GOALS
+- Add perfumes to favorites
+
+
+##MODELS
+
+##PERFUMES 
+###Attributes
+name::string
+image_url::string
+likes::integer
+dislikes::integer
+
+###Relationships
+belongs_to :user
+
+
+##USER
+###Attributes
+username::string
+email::string
+password::string
+
+###Relationships
+has_many :perfumes
