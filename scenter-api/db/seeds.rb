@@ -118,3 +118,12 @@ Perfume.create(name: "Odin 09 Posala", image_url: "https://fimgs.net/mdimg/perfu
 Perfume.create(name: "Odin 10 Roam", image_url: "https://fimgs.net/mdimg/perfume/375x500.18359.jpg", likes: 1, dislikes: 0)
 Perfume.create(name: "Odin 11 Semma", image_url: "https://fimgs.net/mdimg/perfume/375x500.21772.jpg", likes: 1, dislikes: 0)
 Perfume.create(name: "Odin 12 Lacha", image_url: "https://fimgs.net/mdimg/perfume/375x500.31895.jpg", likes: 1, dislikes: 0)
+
+Comment.create(review: "Disgusting. When I put it on, I smell like a BEAST.", reviewer: "Kim R.", perfume_id: 1)
+Comment.create(review: "BEAST?! How dare you?!", reviewer: "Eileen D.", perfume_id: 1)
+Comment.create(review: "This scent makes me feel confident. Who gon' check me, boo?", reviewer: "Sheree W.", perfume_id: 2)
+Comment.create(review: "Stunning. This fragrance makes me feel cool, not all like, uncool.", reviewer: "Countess LuAnn", perfume_id: 3)
+Comment.create(review: "Word on the street is...this is better than La Dame by Karen for sure.", reviewer: "Gizelle B.", perfume_id: 4)
+Comment.create(review: "Fabulous! GONE WITH THE WIND FABULOUS!", reviewer: "Kenya M.", perfume_id: 5)
+Comment.create(review: "Great for any occasion! Makes me ready to whoop it up!", reviewer: "Vicki G.", perfume_id: 6)
+Comment.create(review: "Not a fan. I just delete delete delete.", reviewer: "Vicki G.", perfume_id: 6)
