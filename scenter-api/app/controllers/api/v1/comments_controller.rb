@@ -1,9 +1,10 @@
 class Api::V1::CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :update, :destroy]
+  before_action :set_perfume, only: [:index, :create]
 
   # GET /comments
   def index
-    @comments = Comment.all
+    @comments = @perfume.comments
 
     render json: @comments
   end
@@ -47,5 +48,9 @@ class Api::V1::CommentsController < ApplicationController
     # Only allow a trusted parameter "white list" through.
     def comment_params
       params.require(:comment).permit(:review, :reviewer, :perfume_id)
+    end
+
+    def set_perfume
+      @perfume = Perfume.find_by(id: params[:perfume_id])
     end
 end
