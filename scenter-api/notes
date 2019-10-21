@@ -8,9 +8,7 @@ Users should be able to...
 - "like" and "dislike" perfumes
   - user can only choose "like" or "dislike" for a specific fragrance
 - Leave a comment/review of the fragrance
-
-##STRETCH GOALS
-- Add "Brand" model to keep layout more organized
+- Look at different perfume brands and see their fragrances
 
 ##MODELS
 

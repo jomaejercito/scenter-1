@@ -3,13 +3,15 @@ class Api::V1::PerfumesController < ApplicationController
 
   # GET /perfumes
   def index
-    @perfumes = Perfume.all
+    find_brand
+    @perfumes = @brand.perfumes.all
 
     render json: @perfumes
   end
 
   # GET /perfumes/1
   def show
+    @perfume = set_perfume
     render json: @perfume
   end
 
@@ -48,4 +50,13 @@ class Api::V1::PerfumesController < ApplicationController
     def perfume_params
       params.require(:perfume).permit(:name, :image_url, :likes, :dislikes)
     end
+
+    def find_brand
+      @brand = Brand.find_by(id: params[:brand_id])
+    end    
+
+    def set_brand
+      @brand = Brand.find(params[:brand_id])
+    end    
+
 end

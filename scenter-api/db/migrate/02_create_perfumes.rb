@@ -5,6 +5,7 @@ class CreatePerfumes < ActiveRecord::Migration[6.0]
       t.string :image_url
       t.integer :likes
       t.integer :dislikes
+      t.integer :brand_id
 
       t.timestamps
     end
