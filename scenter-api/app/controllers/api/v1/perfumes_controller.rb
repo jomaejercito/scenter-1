@@ -3,7 +3,6 @@ class Api::V1::PerfumesController < ApplicationController
 
   # GET /perfumes
   def index
-    find_brand
     @perfumes = @brand.perfumes.all
 
     render json: @perfumes
