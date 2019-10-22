@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import BrandsContainer from './containers/BrandsContainer'
+import Home from './components/Home';
 import NavBar from './components/NavBar'
 
 class App extends React.Component {
@@ -18,6 +19,7 @@ class App extends React.Component {
       <Router>
         <div className="App">
         <NavBar />
+          <Route exact path="/" component={Home} />
           <Route exact path="/brands" component={BrandsContainer} />
         </div>
       </Router>
