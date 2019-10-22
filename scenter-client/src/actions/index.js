@@ -11,8 +11,8 @@ export const fetchBrands = () => {
   return dispatch => {
     dispatch({type: 'LOADING_BRANDS'});
       return fetch(`${API_URL}/brands`)
-      .then(response => response.json())
-      .then(brands => dispatch(setBrands(brands)))
-      .catch(error => console.log(error))
+        .then(response => response.json())
+        .then(brands => dispatch(setBrands(brands)))
+        .catch(error => console.log(error))
   }
 }
