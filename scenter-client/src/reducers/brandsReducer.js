@@ -6,9 +6,12 @@ export default function brandsReducer(state = {brands: []}, action) {
       return state
 
     case 'FETCH_BRANDS':
-      return {brands: action.brands}
+      return action.brands
     
-      default:
-        return state; 
+    case 'FETCH_BRAND':
+      return action.brand      
+
+  default:
+    return state; 
   }
 }
