@@ -1,5 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import BrandsContainer from './containers/BrandsContainer'
+import NavBar from './components/NavBar'
 
 class App extends React.Component {
   componentDidMount() {
@@ -12,10 +15,13 @@ class App extends React.Component {
   
   render() {
     return (
-      <div className="App">
-        App
-      </div>
-    );
+      <Router>
+        <div className="App">
+        <NavBar />
+          <Route exact path="/brands" component={BrandsContainer} />
+        </div>
+      </Router>
+    )
   }
 }
 
